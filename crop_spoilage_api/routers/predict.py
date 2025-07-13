@@ -6,8 +6,8 @@ import joblib
 router = APIRouter()
 
 # Load your trained models
-regression_model = joblib.load("C:\Users\user\Desktop\Programs\Ghana AI Hackathon\spoilage_time_regressor_enhanced.pkl")
-classification_model = joblib.load("C:\Users\user\Desktop\Programs\Ghana AI Hackathon\spoilage_risk_classifier_enhanced.pkl")
+regression_model = joblib.load("models/spoilage_time_regressor_enhanced.pkl")
+classification_model = joblib.load("models/spoilage_risk_classifier_enhanced.pkl")
 
 # Crop encoding
 crop_mapping = {
